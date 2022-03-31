@@ -24,6 +24,7 @@ class Monkey extends StatelessWidget {
         StartPage.routeName: (context) => const StartPage(),
         Login.routeName: (context) => const Login(),
         Signup.routeName: (context) => const Signup(),
+        SplashScreen.routeName:(context) => const SplashScreen(),
       },
     );
   }

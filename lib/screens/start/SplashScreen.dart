@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:monkey/screens/start/start_page.dart';
 
 class SplashScreen extends StatefulWidget {
+   static String routeName = "/SplashScreen";
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
