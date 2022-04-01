@@ -1,8 +1,10 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:monkey/screens/app/home.dart';
 import 'package:monkey/screens/auth/login.dart';
 import 'package:monkey/screens/auth/signup.dart';
+import 'package:monkey/screens/start/anounce_page.dart';
 import 'package:monkey/screens/start/start_page.dart';
 
 import 'screens/start/SplashScreen.dart';
@@ -19,12 +21,13 @@ class Monkey extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Monkey',
-      home: const SplashScreen(),
+      home: const AnouncePage(),
       routes: {
         StartPage.routeName: (context) => const StartPage(),
         Login.routeName: (context) => const Login(),
         Signup.routeName: (context) => const Signup(),
-        SplashScreen.routeName:(context) => const SplashScreen(),
+        SplashScreen.routeName: (context) => const SplashScreen(),
+        Home.routeName: (context) => const Home(),
       },
     );
   }
