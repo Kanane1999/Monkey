@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:monkey/screens/app/home.dart';
+import 'package:monkey/screens/app/app.dart';
 import 'package:monkey/screens/auth/signup.dart';
 
 class Login extends StatefulWidget {
@@ -64,7 +64,7 @@ class _LoginState extends State<Login> {
                           colorText: Colors.white,
                           onTap: () {
                             Navigator.pushReplacementNamed(
-                                context, Home.routeName);
+                                context, App.routeName);
                           }),
                       SizedBox(
                         height: shortSpace,
